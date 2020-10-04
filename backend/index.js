@@ -49,12 +49,12 @@ app.use('/restaurants', orders)
 app.use('/restaurants', orderItems)
 app.use('/', staff)
 
-if (config.get('MODE') !== 'PRODUCTION') {
-  const { dbInit } = require('./db/dbInit')
-  app.get('/dbinit', dbInit)
-  const { readCollection } = require('./controllers/user.controller')
-  app.get('/admin/users', readCollection)
-}
+// if (config.get('MODE') !== 'PRODUCTION') {
+const { dbInit } = require('./db/dbInit')
+app.get('/dbinit', dbInit)
+const { readCollection } = require('./controllers/user.controller')
+app.get('/admin/users', readCollection)
+// }
 
 app.use(dbErrorHandler)
 app.use(httpCodeErrorHandler)
