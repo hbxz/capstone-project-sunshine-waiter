@@ -1,0 +1,12 @@
+[Unit]
+Description=SW Backend
+
+[Service]
+ExecStart=/home/ec2-user/capstone-project-sunshine-waiter/backend/index.js
+Restart=always
+Environment=PATH=/usr/bin:/usr/local/bin:~/.nvm/versions/node/v14.10.0/bin/
+Environment=NODE_ENV=production
+WorkingDirectory=/home/ec2-user/capstone-project-sunshine-waiter/backend
+
+[Install]
+WantedBy=multi-user.target
