@@ -394,7 +394,7 @@ Polling with period adaptation.
 
 *   [ ] Add response data filter by `AccessControl`.
 
-*   [ ] Change `menu` in `restaurant` to be `required: true`. This requires transactional creation of `restaurant`. Need some research.
+*   [x] Change `menu` in `restaurant` to be `required: true`. This requires transactional creation of `restaurant`. Need some research.
 
 *   [ ] `readMenu`: after `menuItem` `category` implemented, should return the lists of  `menuItem` and `category`.
 

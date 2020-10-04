@@ -21,6 +21,7 @@
   },
   "scripts": {
     "start": "nodemon index.js",
+    "pro_run": "export NODE_ENV=production; node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js"
   },

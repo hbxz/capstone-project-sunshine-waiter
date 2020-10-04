@@ -5,6 +5,7 @@ dev_*
 tmp_*
 
 # env
+production.json
 .env_file
 
 # upload
